@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EFBE5071F972BB4003A29DD /* FadeAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFBE5061F972BB4003A29DD /* FadeAnimationController.swift */; };
 		7EFF604E1F96CF2800D31F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF604D1F96CF2800D31F75 /* AppDelegate.swift */; };
 		7EFF60501F96CF2800D31F75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFF604F1F96CF2800D31F75 /* ViewController.swift */; };
 		7EFF60531F96CF2800D31F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EFF60511F96CF2800D31F75 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7EFBE5061F972BB4003A29DD /* FadeAnimationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FadeAnimationController.swift; sourceTree = "<group>"; };
 		7EFF604A1F96CF2800D31F75 /* PopupModalDialogSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopupModalDialogSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EFF604D1F96CF2800D31F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EFF604F1F96CF2800D31F75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				7EFF60511F96CF2800D31F75 /* Main.storyboard */,
 				7EFF604F1F96CF2800D31F75 /* ViewController.swift */,
 				7EFF60611F96D50200D31F75 /* PopupModalDialogViewController.swift */,
+				7EFBE5061F972BB4003A29DD /* FadeAnimationController.swift */,
 			);
 			path = PopupModalDialogSample;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFBE5071F972BB4003A29DD /* FadeAnimationController.swift in Sources */,
 				7EFF60501F96CF2800D31F75 /* ViewController.swift in Sources */,
 				7EFF60621F96D50200D31F75 /* PopupModalDialogViewController.swift in Sources */,
 				7EFF604E1F96CF2800D31F75 /* AppDelegate.swift in Sources */,

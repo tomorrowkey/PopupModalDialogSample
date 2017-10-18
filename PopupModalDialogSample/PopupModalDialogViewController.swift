@@ -12,11 +12,7 @@ class PopupModalDialogViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
-
-        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
-        showAnimation()
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,27 +31,6 @@ class PopupModalDialogViewController: UIViewController {
     */
 
     @IBAction func onClickCloseButton(_ sender: UIButton) {
-//        self.view.removeFromSuperview()
-        closeAnimation()
-    }
-
-    func showAnimation() {
-        self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
-        self.view.alpha = 0.0
-        UIView.animate(withDuration: 0.3, animations: {
-            self.view.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-            self.view.alpha = 1.0
-        })
-    }
-
-    func closeAnimation() {
-        UIView.animate(withDuration: 0.3, animations: {
-            self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
-            self.view.alpha = 0.0
-        }, completion: { (finished: Bool) in
-            if (finished) {
-                self.view.removeFromSuperview()
-            }
-        })
+        dismiss(animated: true, completion: nil)
     }
 }

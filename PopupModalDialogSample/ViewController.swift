@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIViewControllerTransitioningDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +22,16 @@ class ViewController: UIViewController {
 
     @IBAction func onClickPopoverButton(_ sender: UIButton) {
         let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popupModalDialogViewController")
-        self.addChildViewController(vc)
-        vc.view.frame = self.view.frame
-        self.view.addSubview(vc.view)
-        vc.didMove(toParentViewController: self)
+        vc.modalPresentationStyle = .overFullScreen
+        vc.transitioningDelegate = self
+        present(vc, animated: true, completion: nil)
+    }
+
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return FadeAnimationController(presenting : true)
+    }
+
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return FadeAnimationController(presenting : false)
     }
 }
